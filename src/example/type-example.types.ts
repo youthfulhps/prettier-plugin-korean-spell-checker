@@ -1,1 +1,1 @@
-export type IArg = 'A' | 'B' | 'C'
+export type IArg = 'A' | 'B' | 'C';
