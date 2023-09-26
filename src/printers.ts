@@ -33,16 +33,12 @@ function createPrinter(parserName: 'babel' | 'typescript') {
       }
 
       const targetText = originalText.slice(start, end);
-
       const suggestions = await checkSpelling(targetText);
 
       if (!suggestions.length) {
         continue;
       }
 
-      // TODO: 모든 제안을 수용하는 것이 좋은 방법인지 판단이 필요함
-      // TODO: 제안이 많다는 것은 오히려 적절하지 못한 수정이 될 수 있음
-      // TODO: 즉 단일의 제안으로 명확한 문법 오류가 아니라면, 굳이 수정해서 혼란을 주지 않는 편이 낫다.
       const checkedText = suggestions.reduce(
         (sum, suggestion) => sum.replace(suggestion.token, suggestion.suggestions[0]),
         targetText,
