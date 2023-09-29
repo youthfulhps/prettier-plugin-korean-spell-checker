@@ -1,10 +1,9 @@
-import type { Plugin } from 'prettier';
-import { parsers } from './parsers';
-import { printers } from './printers';
+import prettier from 'prettier';
+import spellCheckerV3Plugin from './v3';
 
-const spellCheckerPlugin: Plugin = {
-  parsers,
-  printers,
-};
+const isV3 = prettier.version.startsWith('3.');
 
-export default spellCheckerPlugin;
+// TODO: v2
+const plugin = isV3 ? spellCheckerV3Plugin : spellCheckerV3Plugin;
+
+export default plugin;
