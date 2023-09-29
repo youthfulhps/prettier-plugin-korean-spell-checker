@@ -1,2 +1,2 @@
-# prettier-plugin-spelling-checker
+# prettier-plugin-spell-checker
 
