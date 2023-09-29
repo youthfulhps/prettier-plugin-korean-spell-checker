@@ -1,20 +1,24 @@
 {
-  "name": "@youthfulhps/prettier-plugin-spelling-checker",
+  "name": "@youthfulhps/prettier-plugin-spell-checker",
   "version": "0.2.0",
   "description": "Prettier plugin to check Korean spelling.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/youthfulhps/prettier-plugin-spelling-checker.git"
+    "url": "https://github.com/youthfulhps/prettier-plugin-spell-checker.git"
   },
   "license": "MIT",
   "main": "./dist/lib.js",
   "module": "./dist/lib.mjs",
   "types": "./dist/lib.d.ts",
   "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
     "prettier",
     "plugin",
     "korean",
-    "spelling check"
+    "spell-checker"
   ],
   "scripts": {
     "build": "tsc && vite build",
