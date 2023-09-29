@@ -1,4 +1,4 @@
-import type { AstPath, ParserOptions, Doc, Printer, Options, AST } from 'prettier';
+import type { AstPath, ParserOptions, Doc, Printer, Options, AST } from 'prettier3';
 import { format as formatSync } from '@prettier/sync';
 import { NodeRange, traversal } from '~/traversal';
 import { checkSpelling } from '~/helpers/spelling-checker';
