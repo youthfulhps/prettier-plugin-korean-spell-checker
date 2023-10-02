@@ -1,4 +1,20 @@
-## 0.3.0 (2023-09-29)
+## [0.4.0](https://github.com/youthfulhps/prettier-plugin-spell-checker/compare/v0.3.0...v0.4.0) (2023-10-02)
+
+
+### Features
+
+* Define prettier v2 plugin ([b20268c](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/b20268c8d51ea1ff72385f4c7abad09492e778c4))
+* Define spell checker plugin for prettier v3 ([c29726e](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/c29726e444bee5238182883217028a21d3b4695c))
+* Implement main so that plugin can be exported according to prettier version ([fc30fb1](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/fc30fb19e8954836abac3140db935c246bd77274))
+* Implement prettier v2 parsers ([d3fc4c1](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/d3fc4c1e2a700ac3ffa34270050209bdc3430791))
+* Implement prettier v2 printers ([0354e40](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/0354e4003ae24660f54428109fb078c27220fb7d))
+* Migrate parsers for prettier v3 ([871c1fb](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/871c1fbacf26999d4127b73101167b7007088bef))
+* Migrate printer for prettier v3 ([b8fe98a](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/b8fe98a5fa29c7b9eb573c21f30aaa0e7d2eff61))
+* Migrate shared files regardless of prettier version ([c06ddea](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/c06ddeae70272daf727fc03022021bf701ee2ac8))
+* Update package.json to support prettier v2 ([32fd9e3](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/32fd9e3d37e181ac938b0bccfe0f9ce3c3f16b1f))
+* Update peer dependencies meta ([6199cab](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/6199cabb8202318454fa050979a4344725a414ee))
+
+## [0.3.0](https://github.com/youthfulhps/prettier-plugin-spell-checker/compare/92e10ea78797b6783ea5ec8f337b5653c89ab5ec...v0.3.0) (2023-09-29)
 
 
 ### Features
@@ -27,4 +43,5 @@
 * Change prettier plugin name ([b70f707](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/b70f707bc7a5e1bd023b066956a0eeddff53534d))
 * Modify publish package action to prevent release temporarily ([f24af1f](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/f24af1ff5ca213174d31649f50f6a8000515af54))
 * Modify typescript package version ([83798db](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/83798dbbe7b581d83941ce21487a4ed9e210ee0a))
+* **release:** v0.3.0 [skip ci] ([94363d8](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/94363d8e12baed7f4a1b27fcb0a2e0d1e488f8f6))
 
