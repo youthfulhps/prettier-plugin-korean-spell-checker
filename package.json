@@ -59,5 +59,10 @@
   },
   "dependencies": {
     "hanspell": "^0.9.7"
+  },
+  "peerDependenciesMeta": {
+    "@prettier/sync": {
+      "optional": true
+    }
   }
 }
