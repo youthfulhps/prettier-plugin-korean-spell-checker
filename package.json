@@ -1,5 +1,5 @@
 {
-  "name": "@youthfulhps/prettier-plugin-korean-spell-checker",
+  "name": "prettier-plugin-korean-spell-checker",
   "version": "0.5.0",
   "description": "Prettier plugin to check Korean spelling.",
   "repository": {
