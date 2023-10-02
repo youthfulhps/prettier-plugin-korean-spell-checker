@@ -1,2 +1,2 @@
-# prettier-plugin-spell-checker
+# prettier-plugin-korean-spell-checker
 
