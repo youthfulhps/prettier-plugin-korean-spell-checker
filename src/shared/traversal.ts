@@ -14,10 +14,13 @@ function hasKorean(text: string) {
   return /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/.test(text);
 }
 
-export function traversal(ast: AST) {
+export function traversal(ast: AST, parserName: 'babel' | 'typescript') {
   const nodeList: any[] = [];
-  if (!ast.program || !ast.program.body.length) {
-    return ast;
+
+  if (parserName === 'babel') {
+    if (!ast.program || !ast.program.body.length) {
+      return [];
+    }
   }
 
   function recursion(node: unknown) {
@@ -40,22 +43,37 @@ export function traversal(ast: AST) {
       recursion(value);
     });
 
-    if (
-      'extra' in node &&
-      isObject(node.extra) &&
-      'rawValue' in node.extra &&
-      'raw' in node.extra &&
-      node.extra.raw &&
-      node.extra.rawValue &&
-      typeof node.extra.raw === 'string' &&
-      typeof node.extra.rawValue === 'string' &&
-      'value' in node &&
-      typeof node.value === 'string' &&
-      'range' in node &&
-      isNodeRange(node.range)
-    ) {
-      if (hasKorean(node.extra.rawValue)) {
-        nodeList.push(node.range);
+    if (parserName === 'babel') {
+      if (
+        'extra' in node &&
+        isObject(node.extra) &&
+        'rawValue' in node.extra &&
+        'raw' in node.extra &&
+        node.extra.raw &&
+        node.extra.rawValue &&
+        typeof node.extra.raw === 'string' &&
+        typeof node.extra.rawValue === 'string' &&
+        'value' in node &&
+        typeof node.value === 'string' &&
+        'range' in node &&
+        isNodeRange(node.range)
+      ) {
+        if (hasKorean(node.extra.rawValue)) {
+          nodeList.push(node.range);
+        }
+      }
+    } else if (parserName === 'typescript') {
+      if (
+        'value' in node &&
+        typeof node.value === 'string' &&
+        'raw' in node &&
+        typeof node.raw === 'string' &&
+        'range' in node &&
+        isNodeRange(node.range)
+      ) {
+        if (hasKorean(node.raw)) {
+          nodeList.push(node.range);
+        }
       }
     }
   }

@@ -58,20 +58,24 @@ function createPrinter(parserName: 'babel' | 'typescript') {
   return main;
 }
 
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-ignore
-async function preprocess(ast: AST, options: ParserOptions) {
-  targetNodeRangeList = traversal(ast);
-  return ast;
+function createPreprocess(parserName: 'babel' | 'typescript') {
+  /* eslint-disable @typescript-eslint/ban-ts-comment */
+  // @ts-ignore
+  async function preprocess(ast: AST, options: ParserOptions) {
+    targetNodeRangeList = traversal(ast, parserName);
+    return ast;
+  }
+
+  return preprocess;
 }
 
 export const printers: { [astFormat: string]: Printer } = {
   'babel-ast': {
     print: createPrinter('babel'),
-    preprocess,
+    preprocess: createPreprocess('babel'),
   },
   'typescript-ast': {
     print: createPrinter('typescript'),
-    preprocess,
+    preprocess: createPreprocess('typescript'),
   },
 };
