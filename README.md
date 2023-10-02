@@ -1,7 +1,7 @@
 # prettier-plugin-korean-spell-checker
 
 한국어 맞춤법을 검사해주는 prettier 플러그인입니다. [hanspell](https://www.npmjs.com/package/hanspell)을 통해 맞춤법을 검사하며,
-반환된 결과를 통해 문자열을 조작하고 적용합니다.
+반환된 결과를 통해 문자열을 변환합니다.
 
 - before
 
