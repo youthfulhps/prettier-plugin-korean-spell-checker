@@ -1,3 +1,10 @@
+## [0.4.1](https://github.com/youthfulhps/prettier-plugin-spell-checker/compare/v0.4.0...v0.4.1) (2023-10-02)
+
+
+### Bug Fixes
+
+* Modify package.json for unsupported prettier v2 version ([79c25a2](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/79c25a259c55897d8d33af987b77ecb0ab5ecdb1))
+
 ## [0.4.0](https://github.com/youthfulhps/prettier-plugin-spell-checker/compare/v0.3.0...v0.4.0) (2023-10-02)
 
 
@@ -13,6 +20,11 @@
 * Migrate shared files regardless of prettier version ([c06ddea](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/c06ddeae70272daf727fc03022021bf701ee2ac8))
 * Update package.json to support prettier v2 ([32fd9e3](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/32fd9e3d37e181ac938b0bccfe0f9ce3c3f16b1f))
 * Update peer dependencies meta ([6199cab](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/6199cabb8202318454fa050979a4344725a414ee))
+
+
+### Miscellaneous Chores
+
+* **release:** v0.4.0 [skip ci] ([3901f11](https://github.com/youthfulhps/prettier-plugin-spell-checker/commit/3901f11ad5171234f075fcf09d686d35512165df))
 
 ## [0.3.0](https://github.com/youthfulhps/prettier-plugin-spell-checker/compare/92e10ea78797b6783ea5ec8f337b5653c89ab5ec...v0.3.0) (2023-09-29)
 
