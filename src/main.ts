@@ -1,10 +1,3 @@
-import type { Plugin } from 'prettier';
-import { parsers } from './parsers';
-import { printers } from './printers';
+import spellCheckerV3Plugin from './v3';
 
-const spellCheckerPlugin: Plugin = {
-  parsers,
-  printers,
-};
-
-export default spellCheckerPlugin;
+export default spellCheckerV3Plugin;
