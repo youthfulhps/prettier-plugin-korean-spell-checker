@@ -1,6 +1,6 @@
 {
   "name": "prettier-plugin-korean-spell-checker",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Prettier plugin to check Korean spelling.",
   "repository": {
     "type": "git",
