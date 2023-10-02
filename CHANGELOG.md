@@ -1,9 +1,22 @@
+## [0.5.0](https://github.com/youthfulhps/prettier-plugin-korean-spell-checker/compare/v0.4.2...v0.5.0) (2023-10-02)
+
+
+### Features
+
+* Modify traversal logic to handle ast structure returned by typescript parser ([20fad60](https://github.com/youthfulhps/prettier-plugin-korean-spell-checker/commit/20fad6046417b8042935f9d2e83722cf5696de6e))
+
+
+### Miscellaneous Chores
+
+* Remove unused example functions ([fde9714](https://github.com/youthfulhps/prettier-plugin-korean-spell-checker/commit/fde97146590933f5b8a1acfcd08fd3d37dd61c60))
+
 ## [0.4.2](https://github.com/youthfulhps/prettier-plugin-korean-spell-checker/compare/v0.4.1...v0.4.2) (2023-10-02)
 
 
 ### Miscellaneous Chores
 
 * Modify package name ([cf9dbe8](https://github.com/youthfulhps/prettier-plugin-korean-spell-checker/commit/cf9dbe80c5e62907647ae179d116c7a7ee655091))
+* **release:** v0.4.2 [skip ci] ([f211a23](https://github.com/youthfulhps/prettier-plugin-korean-spell-checker/commit/f211a231322b277be5b96ed68d74d03c178f177a))
 
 ## [0.4.1](https://github.com/youthfulhps/prettier-plugin-korean-spell-checker/compare/v0.4.0...v0.4.1) (2023-10-02)
 
