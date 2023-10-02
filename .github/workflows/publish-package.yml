@@ -1,11 +1,11 @@
 name: Publish Package
 
-#on:
-#  workflow_run:
-#    workflows:
-#      - 'Release'
-#    types:
-#      - completed
+on:
+  workflow_run:
+    workflows:
+      - 'Release'
+    types:
+      - completed
 
 jobs:
   build:
