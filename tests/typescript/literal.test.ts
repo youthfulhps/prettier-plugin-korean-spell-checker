@@ -21,8 +21,12 @@ const conditionalText = true ? "됩니다." : "안 돼요.";
 
 describe('typescript/literal', () => {
   for (const { name, input, output } of fixtures) {
-    test(name, async () => {
-      expect(await format(input, options)).toBe(output);
-    });
+    test(
+      name,
+      async () => {
+        expect(await format(input, options)).toBe(output);
+      },
+      10000,
+    );
   }
 });

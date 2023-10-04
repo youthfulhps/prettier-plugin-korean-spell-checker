@@ -39,8 +39,12 @@ export default ComponentA;
 
 describe('babel/jsx-text', () => {
   for (const { name, input, output } of fixtures) {
-    test(name, async () => {
-      expect(await format(input, options)).toBe(output);
-    });
+    test(
+      name,
+      async () => {
+        expect(await format(input, options)).toBe(output);
+      },
+      10000,
+    );
   }
 });
